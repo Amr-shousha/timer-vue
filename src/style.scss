@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "ExpoArabic";
+  src: url(../src/assets/Itim-Ubuntu/Ubuntu/Ubuntu-Light.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url(../src/assets/Itim-Ubuntu/Ubuntu/Ubuntu-Medium.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "ExpoArabic";
+  src: url(../src/assets/Itim-Ubuntu/Ubuntu/Ubuntu-Bold.ttf);
+  font-weight: 900;
+}
+
+/* :root {
+  --primary-color: #2b4365;
+  --secondary-color: #fcdabf;
+  --dark-color: #000;
+  --light-color: #fff;
+  --gray-color: #808080;
+} */
+
+body {
+  margin: 0;
+  font-family: "ExpoArabic" !important;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url(./assets/imgs/clock.jpg) no-repeat center/cover;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30%;
+  padding: 40px 0;
+  background-color: #00000063;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  margin-top: -10px;
+  input {
+    width: 60px;
+    margin-right: 5px;
+  }
+  label {
+    font-size: 30px;
+    color: aliceblue;
+  }
+}
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.time {
+  margin: 30px 0px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+button {
+  border: none;
+  padding: 6px 0;
+  width: 150px;
+  font-weight: 700;
+  background-color: #55ff00;
+
+  &:hover {
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in;
+  }
+}
+.stop {
+  background-color: #ff0000;
+  color: aliceblue;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
