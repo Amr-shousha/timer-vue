@@ -2,15 +2,33 @@
 
 <template>
   <div>
-    <router-link to="/">Home </router-link>
-    <router-link :to="{ name: 'Timer' }">Timer </router-link>
-    <router-link :to="{ name: 'stopwatch' }">stop watch </router-link>
+    <div class="nav-bar">
+      <router-link to="/"><button class="nav">Home</button></router-link>
+      <router-link :to="{ name: 'Timer' }"
+        ><button class="nav">Timer</button>
+      </router-link>
+      <router-link :to="{ name: 'stopwatch' }"
+        ><button class="nav">stop watch</button>
+      </router-link>
+    </div>
 
     <router-view></router-view>
   </div>
 </template>
 
 <style scoped>
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.nav {
+  border: none;
+  padding: 6px 50px;
+  width: auto;
+  font-weight: 700;
+  background-color: #c4bbb8;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
